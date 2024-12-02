@@ -69,7 +69,7 @@ function getMenu(array $menu, bool $vertical = true): void
 
     getMenu($leftMenu);
 
-    echo '<h2>Горизонтальное меню (vertical=false)</h2>';
+    echo '<h2>Горизонтальное меню</h2>';
     getMenu($leftMenu, false);
     ?>
 </body>
