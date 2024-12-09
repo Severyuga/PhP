@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['fname'], $_POST['lname
   $lname = trim(htmlspecialchars($_POST['lname']));
 
 
-  $line = "$fname $lname\n";
+  $line = "$lname $fname\n";
   file_put_contents(FILENAME, $line, FILE_APPEND);
 
   // Перезапрос текущей страницы, чтобы избавиться от данных POST
