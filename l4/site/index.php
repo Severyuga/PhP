@@ -2,6 +2,20 @@
 include 'inc/lib.inc.php';
 include 'inc/data.inc.php';
 
+declare(strict_types=1);
+/*
+   ЗАДАНИЕ 1
+   - Присвойте переменной $now значение метки времени актуальной даты(сегодня)
+   - Присвойте переменной $birthday значение метки времени Вашего дня рождения
+   - Создайте переменную $hour
+   - С помощью функции getdate() присвойте переменной $hour текущий час
+*/
+
+$now = time();
+$birthday = mktime(0, 0, 0, 10, 9, (int) date('Y'));
+$hour = getdate()['hours'];
+
+
 // установка приветствия
 $welcome = "Добрый день";
 setWelcome($welcome);
@@ -77,8 +91,10 @@ switch ($id) {
   <footer>
     <!-- Нижняя часть страницы -->
     <?php include 'inc/bottom.inc.php'; ?>
+    <?php include 'l3\date.php'; ?>
     <!-- Нижняя часть страницы -->
   </footer>
 </body>
 
 </html>
+
