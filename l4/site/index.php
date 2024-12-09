@@ -3,7 +3,20 @@ include 'inc/lib.inc.php';
 include 'inc/data.inc.php';
 
 // установка приветствия
-$welcome = "Добрый день";
+
+// Используя управляющую конструкцию if – elseif - else присвойте переменной $welcome значение, изходя из следующих условий
+if ($hour >= 0 && $hour < 6) {
+  $welcome = 'Доброй ночи';
+} elseif ($hour >= 6 && $hour < 12) {
+  $welcome = 'Доброе утро';
+} elseif ($hour >= 12 && $hour < 18) {
+  $welcome = 'Добрый день';
+} elseif ($hour >= 18 && $hour < 23) {
+  $welcome = 'Добрый вечер';
+} else {
+  $welcome = 'Доброй ночи';
+}
+
 setWelcome($welcome);
 
 $title = 'Сайт нашей школы';
@@ -29,18 +42,7 @@ switch ($id) {
     
 }
 
-// Используя управляющую конструкцию if – elseif - else присвойте переменной $welcome значение, изходя из следующих условий
-if ($hour >= 0 && $hour < 6) {
-  $welcome = 'Доброй ночи';
-} elseif ($hour >= 6 && $hour < 12) {
-  $welcome = 'Доброе утро';
-} elseif ($hour >= 12 && $hour < 18) {
-  $welcome = 'Добрый день';
-} elseif ($hour >= 18 && $hour < 23) {
-  $welcome = 'Добрый вечер';
-} else {
-  $welcome = 'Доброй ночи';
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
