@@ -19,7 +19,7 @@ if (isset($_COOKIE['visits']))
   $visits = (int) $_COOKIE['visits'] + 1;
 
 
-$visitMessage = 'Это ваш первый визит на сайт.';
+$visitMessage = 'Добро пожаловать!';
 if (isset($_COOKIE['visitMessage'])) {
   $visitMessage = htmlspecialchars(trim($_COOKIE['visitMessage']));
   $visitMessage = "<p>Последнее посещение: $visitMessage</p>";
