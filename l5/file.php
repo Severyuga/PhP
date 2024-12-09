@@ -13,7 +13,7 @@ declare(strict_types=1);
   (чтобы избавиться от данных, отправленных методом POST)
 */
 
-define('FILENAME', 'db\users.txt');
+define('FILENAME', 'l5/db/users.txt');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['fname'], $_POST['lname'])) {
     // фильтруем полученные значения
