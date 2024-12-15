@@ -24,13 +24,13 @@ echo "<!DOCTYPE html>
 
 $user1 = new User("Дмитрий", "DimOchka", "password1");
 $user2 = new User("Святослав", "Svyat", "password2");
-$user3 = new User("Олуг", "Olezhka", "password3");
+$user3 = new User("Олег", "Olezhka", "password3");
 
 echo $user1->showInfo();
 echo $user2->showInfo();
 echo $user3->showInfo();
 
-$user = new SuperUser("Admin", "admin_", "password4", "administrator");
+$user = new SuperUser("Светлана", "admin_", "password4", "administrator");
 echo $user->showInfo();
 
 unset($user1);
