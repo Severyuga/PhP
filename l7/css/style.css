@@ -4,12 +4,12 @@ body {
 
 .user-info,
 .super-user-info {
-    border: 1px solid #f7e1f3;
+    border: 1px solid #ffffff;
     padding: 15px;
     margin: 10px 0;
 }
 
 .user-info h3,
 .super-user-info h3 {
-    color: rgb(223, 107, 153);
+    color: rgb(25, 0, 255);
 }
