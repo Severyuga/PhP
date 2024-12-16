@@ -1,4 +1,0 @@
-Имя: f1034565_login_db
-Пользователь: f1034565_login_db
-Пароль: oa7KHZbC
-Адрес хоста: localhost
