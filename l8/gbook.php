@@ -1,4 +1,5 @@
 <?php
+include 'config-sample.php';
 declare(strict_types=1);
 
 /* ЗАДАНИЕ 1
